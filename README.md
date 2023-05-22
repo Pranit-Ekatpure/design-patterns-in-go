@@ -1,4 +1,19 @@
-# go-design-patterns
+# Design Patterns in GO
+## SOLID Design Principles
+### 1. Single Responsibility Principle (SRP)
+There should never be more than one reason for a class to change. In other words, every class should have only one responsibility.
+### Open-Closed Principle (OCP)
+Software entities ... should be open for extension, but closed for modification.
+### Liskov Substitution Principle (LSP)
+Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.
+### Interface Segregation Principle (ISP)
+Clients should not be forced to depend upon interfaces that they do not use.
+### Dependency Inversion Principle (DIP)
+Depend upon abstractions, [not] concretions.
+High-level modules should not import anything from low-level modules. Both should depend on abstractions (e.g., interfaces).
+Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+
+
 ## Creational Patterns 
 > Singleton, Builder, Factory, Prototype, and Abstract Factory Design Patterns
  
@@ -20,7 +35,7 @@ Use case examples:
 ### Builder design pattern:
 > Reusing an algorithm to create many implementations of an interface
 
-The builder pattern helps us construct complex objects without directly instantiating their struct, or writing the logic they require. An object that could have dozens of fields that are more complex structs themselves and there could be many onjects with these characteristics. We don't want to write the logic to create all these objects in the package that just needs to use the onjects.
+The builder pattern helps us construct complex objects without directly instantiating their struct, or writing the logic they require. An object that could have dozens of fields that are more complex structs themselves and there could be many onjects with these characteristics. We don't want to write the logic to create all these objects in the package that just needs to use the objects.
 
 A builder design pattern tries to:
 * Abstract complex creations so that creation is separated from the object user
