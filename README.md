@@ -2,13 +2,13 @@
 ## SOLID Design Principles
 ### 1. Single Responsibility Principle (SRP)
 There should never be more than one reason for a class to change. In other words, every class should have only one responsibility.
-### Open-Closed Principle (OCP)
+### 2. Open-Closed Principle (OCP)
 Software entities ... should be open for extension, but closed for modification.
-### Liskov Substitution Principle (LSP)
+### 3. Liskov Substitution Principle (LSP)
 Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.
-### Interface Segregation Principle (ISP)
+### 4. Interface Segregation Principle (ISP)
 Clients should not be forced to depend upon interfaces that they do not use.
-### Dependency Inversion Principle (DIP)
+### 5. Dependency Inversion Principle (DIP)
 Depend upon abstractions, [not] concretions.
 High-level modules should not import anything from low-level modules. Both should depend on abstractions (e.g., interfaces).
 Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
