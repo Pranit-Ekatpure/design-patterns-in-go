@@ -33,7 +33,7 @@ Use case examples:
 * To limit the number of calls to some places, create a singleton instance to make the calls in the accepted window.
 
 ### Builder design pattern:
-> Reusing an algorithm to create many implementations of an interface
+> Reusing an algorithm to create many implementations of an interface. The intent of the builder design pattern is to separate the construction of a complex object from its representation.
 
 The builder pattern helps us construct complex objects without directly instantiating their struct, or writing the logic they require. An object that could have dozens of fields that are more complex structs themselves and there could be many onjects with these characteristics. We don't want to write the logic to create all these objects in the package that just needs to use the objects.
 
