@@ -13,8 +13,8 @@ Depend upon abstractions, [not] concretions.
 High-level modules should not import anything from low-level modules. Both should depend on abstractions (e.g., interfaces).
 Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
 
-
-## Creational Patterns 
+## Design Patterns
+## 1. Creational Patterns 
 > Singleton, Builder, Factory, Prototype, and Abstract Factory Design Patterns
  
 
@@ -41,3 +41,26 @@ A builder design pattern tries to:
 * Abstract complex creations so that creation is separated from the object user
 * Create an object step by step filling its fields and creating the embdded objects
 * Reuse the object creation algorithm between many objects
+
+### Factory design pattern:
+> Factory, a component resposible soley for the wholesale (not piecewise, unlike builder) creation of objects. With the Factory method, we delegate the creation of families of objects to a different package or object to abstract us from the knowledge of the pool of possible objects we could use.
+
+Objectives:
+* Delegating the creation of new instances of structures to a different part of the
+program
+* Working at the interface level instead of with concrete implementations
+* Grouping families of objects to obtain a family object creator
+
+### Prototype design pattern:
+> The aim of the Prototype pattern is to have an object or a set of objects that is already created at compilation time, but which you can clone as many times as you want at runtime.
+
+Objectives:
+* The main objective for the Prototype design pattern is to avoid repetitive object creation. Imagine a default object composed of dozens of fields and embedded types. We don't want to write everything needed by this type every time that we use the object, especially if we can mess it up by creating instances with different foundations: Maintain a set of objects that will be cloned to create new instances, Provide a default value of some type to start working on top of it, Free CPU of complex object initialization to take more memory resources.
+
+## 2. Structural Patterns
+### Adapter design pattern:
+> It is one of the most commonly used structural patterns. An adapter will allow us to use something that wasn't built for a spcefic task at the beginning. The Adapter pattern is very useful when, for example, an interface gets outdated and it's
+not possible to replace it easily or fast. Instead, you create a new interface to deal with the current needs of your application, which, under the hood, uses implementations of the old interface. Adapter also helps us to maintain the open/closed principle in our apps, making them more predictable too. They also allow us to write code which uses some base that we can't modify.
+
+Objectives:
+* The Adapter design pattern helps to fit the needs of two parts of the code that are incompatible at first. 
