@@ -64,3 +64,9 @@ not possible to replace it easily or fast. Instead, you create a new interface t
 
 Objectives:
 * The Adapter design pattern helps to fit the needs of two parts of the code that are incompatible at first. 
+
+### Bridge design pattern:
+> The Bridge pattern tries to decouple things as usual with design patterns. It decouples abstraction (an object) from its implementation (the thing that the object does). This way, we can change what an object does as much as we want. It also allows us to change the abstracted object while reusing the same implementation.
+
+Objectives:
+> The objective of the Bridge pattern is to bring flexibility to a struct that change often. Knowing the inputs and outputs of a method, it allows us to change code without knowing too much about it and leaving the freedom for both sides to be modified more easily.
