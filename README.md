@@ -69,11 +69,11 @@ Objectives:
 > The Bridge pattern tries to decouple things as usual with design patterns. It decouples abstraction (an object) from its implementation (the thing that the object does). This way, we can change what an object does as much as we want. It also allows us to change the abstracted object while reusing the same implementation.
 
 Objectives:
-> The objective of the Bridge pattern is to bring flexibility to a struct that change often. Knowing the inputs and outputs of a method, it allows us to change code without knowing too much about it and leaving the freedom for both sides to be modified more easily.
+* The objective of the Bridge pattern is to bring flexibility to a struct that change often. Knowing the inputs and outputs of a method, it allows us to change code without knowing too much about it and leaving the freedom for both sides to be modified more easily.
 
 ### Composite design pattern:
 > In the Composite design pattern, you will create hierarchies and trees of objects. Objects have different objects with their own fields and methods inside them. This approach is very powerful and solves many problems of inheritance and multiple inheritances.
 
 Objectives:
-> The objective of the composition is to avoid hierarchy where the complexity of an application could grow too much, and the
+* The objective of the composition is to avoid hierarchy where the complexity of an application could grow too much, and the
 clarity of the code is affected. Use this pattern when the composite and individual object form a tree-like structure.
